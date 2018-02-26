@@ -1,0 +1,33 @@
+/*html css start*/
+html{
+	overflow-x: hidden;
+	font-size: 1em;
+}
+
+/*html css end*/
+
+.probootstrap_navbar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+}
+
+.probootstrap_navbar .nav-item .nav-link{
+	padding: 1.6em 1em;
+	font-size: 12px;
+	letter-spacing: .1em;
+	font-weight: 400;
+}
+
+.navbar-brand{
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+

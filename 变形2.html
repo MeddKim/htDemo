@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-sizing</title>
+	<style type="text/css">
+		div{        
+			width: 300px;             
+			margin: 150px auto;
+			background-color: yellow;
+			text-align: center;
+		}
+		div#div1{        
+			transform:  translate(150px, 200px) rotate(45deg) scale(1.5);	
+		}
+		div#div2{        
+			transform:  translate(150px, 200px) rotate(45deg) scale(1.5);	
+			/*修改元素变形基准点，默认为元素中心 */
+			transform-origin: left bottom
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">示例文字</div>
+	<div id="div2">示例文字</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-sizing</title>
+	<style type="text/css">
+		div{        
+			width: 300px;             
+			margin: 150px auto;
+			background-color: yellow;
+			text-align: center;
+			/*transform能实现旋转，缩放，倾斜，移动*/
+			
+		}
+		/*旋转*/
+		div#div1{        
+			transform: rotate(45deg);
+		}
+		div#div2{
+			transform: scale(0.5);
+		}
+		/*缩放*/
+		div#div3{
+			transform: scale(0.5,2);
+		}
+		/*倾斜*/
+		div#div4{
+			transform: skew(30deg,30deg);
+		}
+		/*移动*/
+		div#div5{
+			transform: translate(100px,30px);
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">示例文字</div>
+	<div id="div2">示例文字</div>
+	<div id="div3">示例文字</div>
+	<div id="div4">示例文字</div>
+	<div id="div5">示例文字</div>
+</body>
+</html>

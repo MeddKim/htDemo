@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>弹性布局-justify-content</title>
+    <style type="text/css">
+    #container1 {
+        display: flex;
+        border: solid 5px blue;
+        flex-direction: row;
+        width: 600px;
+        height: 30px;
+        justify-content: flex-start;
+    }
+
+    #text-a1 {
+        background-color: orange;
+        /*width: 100px;*/
+    }
+
+    #text-b1 {
+        background-color: yellow;
+        /*width: 150px;*/
+    }
+
+    #text-c1 {
+        background-color: limegreen;
+        /*width: 200px;*/
+    }
+
+    #text-a1,
+    #text-b1,
+    #text-c1 {
+        box-sizing: border-box;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    #container2 {
+        display: flex;
+        border: solid 5px blue;
+        flex-direction: row;
+        width: 600px;
+        height: 30px;
+        /*justify-content设置容器中子元素除外main axis方向空白部分的分配*/
+        justify-content: center;
+    }
+
+    #container3 {
+        display: flex;
+        border: solid 5px blue;
+        flex-direction: row;
+        width: 600px;
+        height: 30px;
+        justify-content: space-between;
+    }
+
+    #container4 {
+        display: flex;
+        border: solid 5px blue;
+        flex-direction: row;
+        width: 600px;
+        height: 30px;
+        justify-content: space-around;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container1">
+        <div id="text-a1">示例文字A</div>
+        <div id="text-b1">示例文字B</div>
+        <div id="text-c1">示例文字C</div>
+    </div>
+    <br>
+    <div id="container2">
+        <div id="text-a1">示例文字A</div>
+        <div id="text-b1">示例文字B</div>
+        <div id="text-c1">示例文字C</div>
+    </div>
+    <br>
+    <div id="container3">
+        <div id="text-a1">示例文字A</div>
+        <div id="text-b1">示例文字B</div>
+        <div id="text-c1">示例文字C</div>
+    </div>
+    <br>
+    <div id="container4">
+        <div id="text-a1">示例文字A</div>
+        <div id="text-b1">示例文字B</div>
+        <div id="text-c1">示例文字C</div>
+    </div>
+    <br>
+</body>
+
+</html>

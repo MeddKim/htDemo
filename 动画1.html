@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-sizing</title>
+	<style type="text/css">
+	/* transition支持从一个属性值平滑过度到里一个属性值 */
+	/* animation 功能支持通过关键帧的指定在页面上产生更复杂的动画效果*/
+	
+	/*
+	  transition: property duration timing-function
+	  proerty：需要过度的属性
+	  duration：过度时间
+	  timing-function：过度方式
+	 */
+	div#div1{
+		background-color: #ffff00;
+		transition: background-color 1s linear;
+		/*延迟执行时间*/
+		transition-delay: 1s;
+	}
+	div#div1:hover{
+		background-color: #00ffff;
+	}
+	div#div2{
+		background-color: #ffff00;
+		height: 200px;
+		width: 200px;
+	}
+	div#div2:hover{
+		background-color: #00ffff;
+		transform: rotate(45deg) scale(2);
+		/*多个动画可同时执行*/
+		transition: background-color 1s linear , transform 1s linear;
+	}
+	</style>
+</head>
+<body>
+	<div id="div1">示例文字</div>
+	<div id="div2">示例文字</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-sizing</title>
+	<style type="text/css">
+		div{        
+			width: 300px;        
+			border: solid 30px #ffaa00;        
+			padding: 30px;        
+			background-color: #ffff00;        
+			margin: 20px auto;
+		}
+		div#div1{        
+			box-sizing: content-box;
+		}
+		div#div2{        
+			box-sizing: border-box;
+		}
+		div#div3{        
+			/*firefox支持*/
+			box-sizing:padding-box;
+		}
+	</style>
+</head>
+<body>
+	<!--指定box-sizing指定元素的宽高是否包含补白(pading)和边框
+		content-box不包括（默认）
+		border-box包括 
+	-->
+
+	<div id="div1">
+		示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字
+	</div>
+	<div id="div2">
+		示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字
+	</div>
+	<div id="div3">
+		示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字
+	</div>
+</body>
+</html>

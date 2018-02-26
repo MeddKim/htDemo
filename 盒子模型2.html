@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒子内容</title>
+	<style>
+		div[class="dv0"]{
+        	overflow:hidden;        
+        	width: 300px;        
+        	height: 150px;        
+        	border: solid 1px orange;			
+		}
+		div[class="dv1"]{
+        	overflow:visible;        
+        	width: 300px;        
+        	height: 150px;        
+        	border: solid 1px orange;			
+		}
+		div[class="dv2"]{
+        	overflow:scroll;        
+        	width: 300px;        
+        	height: 150px;        
+        	border: solid 1px orange;			
+		}
+		div[class="dv3"]{
+        	overflow-x:visible;
+        	overflow-y:scroll;        
+        	width: 300px;        
+        	height: 150px;        
+        	border: solid 1px orange;			
+		}
+		div[class="dv4"]{
+        	overflow:auto;       
+        	width: 300px;        
+        	height: 150px;        
+        	border: solid 1px orange;			
+		}
+		div[class="dv5"]{        
+			white-space: nowrap;        
+			width: 300px;   
+			overflow: hidden;     
+			border: solid 1px orange;
+			text-overflow: ellipsis;
+		}
+	</style>
+</head>
+<body>
+	<div class="dv0">
+		<h1>测试文字</h1>
+		<p>测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字
+		测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字</p>
+	</div>
+	<br><br><br><br>
+
+	<div class="dv1">
+		<h1>测试文字</h1>
+		<p>测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字
+		测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字</p>
+	</div>
+	<br><br><br><br>
+
+	<div class="dv2">
+		<h1>测试文字</h1>
+		<p>测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字
+		测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字</p>
+	</div>
+	<br><br><br><br>
+
+	<div class="dv3">
+		<h1>测试文字</h1>
+		<p>测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字
+		测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字</p>
+	</div>
+	<br><br><br><br>
+
+	<div class="dv4">
+		<h1>测试文字</h1>
+		<p>测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字
+		测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字</p>
+	</div>
+	<br><br><br><br>
+
+	<div class="dv5">
+		<h1>测试文字</h1>
+		<p>测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字
+		测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字</p>
+	</div>
+	<br><br><br><br>
+</body>
+</html>

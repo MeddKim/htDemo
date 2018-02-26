@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>弹性布局-消除空白flex-grow</title>
+    <style type="text/css">
+    #container {
+        display: flex;
+        border: solid 5px blue;
+        flex-direction: row;
+        -moz-box-orient: horizontal;
+        -webkit-box-orient: horizontal;
+        width: 500px;
+        height: 300px;
+    }
+
+    #text-a{
+        background-color: orange;
+
+    }
+    #text-b{
+        background-color: yellow;
+        /**
+         * flex-grow属性在元素总宽度小于容器宽度（或高度）
+         * 表示，将空白部分（容器总长-元素长的和）分为 m 等分（m表示容器内元素flex属性值的和）
+         * 每个元素占用flex指定的等分
+         *
+         * flex-shrink属性在元素总宽度大于容器宽度（或高度）
+         * 表示，将空白部分（元素长的和-容器总长）分为 m 等分（m表示容器内元素flex属性值的和）
+         * 每个元素减去flex指定的等分
+         *
+         * flex-basis为调整前元素的长度，等同于width
+         *
+         * 以上三个元素可以合并为flex属性
+         * flex : flex-grow样式值 flex-shrink样式值 flex-basis样式值;
+         */
+        flex-grow: 1;
+        
+    }
+    #text-c{
+        background-color: limegreen;
+        
+    }
+    #text-a, #text-b, #text-c{
+        box-sizing: border-box;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="text-a">示例文字A</div>
+        <div id="text-b">示例文字B</div>
+        <div id="text-c">示例文字C</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>弹性布局-align-items</title>
+    <style type="text/css">
+    #container {
+        display: flex;
+        border: solid 5px blue;
+        flex-direction: row;
+        width: 600px;
+        align-items: flex-start;: 
+    }
+
+    #text-a{
+        background-color: orange;
+        width: 100px;
+        font-size: 12px;
+    }
+    #text-b{
+        background-color: yellow;
+        font-size: 24px;
+        
+    }
+    #text-c{
+        background-color: limegreen;
+        font-size: 36px;
+    }
+    #text-a, #text-b, #text-c{
+        box-sizing: border-box;
+        /*font-size: 1.5em;*/
+        /*font-weight: bold;*/
+    }
+    #container1 {
+        display: flex;
+        border: solid 5px blue;
+        flex-direction: row;
+        width: 600px;
+        /*align-items 指定元素cross axis轴方向的对齐
+            使用align-self可以单独设置
+
+          align-content指定行对齐方式
+        */
+        align-items: flex-end;: 
+    }
+    #container2 {
+        display: flex;
+        border: solid 5px blue;
+        flex-direction: row;
+        width: 600px;
+        align-items: center;: 
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="text-a">示例文字A</div>
+        <div id="text-b">示例文字B</div>
+        <div id="text-c">示例文字C</div>
+    </div><br>
+    <div id="container1">
+        <div id="text-a">示例文字A</div>
+        <div id="text-b">示例文字B</div>
+        <div id="text-c">示例文字C</div>
+    </div><br>
+    <div id="container2">
+        <div id="text-a">示例文字A</div>
+        <div id="text-b">示例文字B</div>
+        <div id="text-c">示例文字C</div>
+    </div><br>
+</body>
+
+</html>

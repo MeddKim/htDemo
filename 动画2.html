@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-sizing</title>
+	<style type="text/css">
+	div#div1{
+		background-color: red;
+		height: 200px;
+		width: 200px;
+	}
+	
+	/*创建关键帧合集 其中mycolor为合集名称*/
+	@keyframes mycolor{
+		0% {
+			background-color: red;
+			transform: rotate(0deg);
+		}
+		40% {
+			background-color: darkblue;
+			transform: rotate(30deg);
+		}
+		70% {
+			background-color: yellow;
+			transform: rotate(-30deg);
+		}
+		100% {
+			background-color: red
+			transform: rotate(0deg);
+		}
+	}
+
+	div#div1:hover{
+		animation-name: mycolor;
+		animation-duration: 5s;
+		animation-timing-function: linear; /*其他值有：ease-in ease-out ease ease-in-out*/
+		/*执行次数*/
+		animation-iteration-count: infinite;
+
+	}
+
+	</style>
+</head>
+<body>
+	<div id="div1">示例文字</div>
+</body>
+</html>
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Animations功能使用示例</title>
+</head>
+<style type="text/css">
+div {
+    background-color: red;
+}
+
+@keyframes mycolor {
+    0% {
+        background-color: red;
+    }
+    40% {
+        background-color: darkblue;
+    }
+    70% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+div:hover {
+    animation-name: mycolor;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+</style>
+
+<body>
+    <div>示例文字</div>
+</body>
+
+</html> -->
