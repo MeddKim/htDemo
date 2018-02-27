@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light probootstrap_navbar">
+    <nav class="navbar navbar-expand-sm navbar-dark probootstrap_navbar">
         <div class="container">
             <a href="" class="navbar-brand">首页</a>
             <div class="collapse navbar-collapse">
@@ -29,8 +29,86 @@
             </div>
         </div>
     </nav>
-
     <!--end nav-->
+    <section class="probootstrap-cover overflow-hidden relative">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md">
+                    <h2 class="heading mb-2 display-4 font-light">轻松游世界</h2>
+                    <p class="lead mb-5"></p>
+                    <a href="" role="button" class="btn btn-success p-3 mr-3 pl-5 pr-5 d-lg-inline d-md-inline d-sm-block d-block mb-3">全新旅程</a>
+                </div>
+                <div class="col-md">
+                    <form action="" class="probootstrap-form">
+                        <div class="form-group">
+                            <div class="row mb-3">
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="id_label_single">出发地</label>
+                                        <label for="id_label_single" style="width: 100%">
+                                            <select name="" id="id_label_single" class="form-control" style="width: 100%">
+                                                <option value="">中国</option>
+                                                <option value="">美国</option>
+                                                <option value="">日本</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="id_label_single">目的地</label>
+                                        <label for="id_label_single" style="width: 100%">
+                                            <select name="" id="id_label_single" class="form-control" style="width: 100%">
+                                                <option value="">中国</option>
+                                                <option value="">美国</option>
+                                                <option value="">日本</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END row-->
+                            <div class="row mb-5">
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="probootstrap-date-departure">出发时间</label>
+                                        <div class="probootstrap-date-wrap">
+                                            <span class="icon ion-calendar"></span>
+                                            <input type="text" id="probootstrap-date-departure" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="probootstrap-date-arrival">回程时间</label>
+                                        <div class="probootstrap-date-wrap">
+                                            <span class="icon ion-calendar"></span>
+                                            <input type="text" id="probootstrap-date-arrival" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end row-->
+                            <div class="row">
+                            	<div class="col-md">
+                            		<label for="round" class="mr-5"><input type="radio" id="round">往返</label>
+                            		<label for="oneway" ><input type="radio" id="oneway">单程</label>
+                            	</div>
+                            	<div class="col-md">
+                            		<input type="submit" value="确认信息" class="btn btn-primary btn-block">
+                            	</div>
+
+                            </div>
+                            <!--end-row-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </body>
 
 </html>
